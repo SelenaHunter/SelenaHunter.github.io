@@ -3,3 +3,142 @@
 	margin: 0;
 }
 
+html {
+	color: #f6f1ee;
+	background-color: #10100e;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	font-size: 1em;
+	padding: 2em;
+}
+
+h1,
+h2,
+.title,
+.subtitle {
+	font-family: 'Merriweather', serif;
+}
+
+a {
+	text-decoration: none;
+	color: #f6f1ee;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+ul {
+	list-style: none;
+}
+
+#hero {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(resources/img/safar-safarov-1487033-unsplash.jpg);
+	height: 25em;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	padding: 5em;
+}
+
+.title {
+	font-size: 4em;
+	padding: 0.5em;
+}
+
+.subtitle {
+	color: #fdb034;
+	font-size: 2em;
+}
+
+.hero-text {
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.navbar {
+	position:sticky;
+	top:0;
+	background-color: #10100e;
+	z-index: 1;
+}
+
+.navbar ul {
+	display: inline-flex;
+}
+
+.navbar li {
+	padding: 1em;
+}
+
+.navbar a {
+	color: #fdb034;
+}
+
+.about {
+	padding: 0em 6em;
+}
+
+.about ul {
+	display: inline-flex;
+}
+
+button {
+	font-family: inherit;
+	text-transform: uppercase;
+	padding: 1em;
+	margin: 2em 0.5em;
+	color: #fdb034;
+	background-color: inherit;
+	border: 1px solid #fdb034;
+	font-weight: 700;
+}
+
+button:hover {
+	cursor: pointer;
+	background-color: #fdb034;
+	color: #10100e;
+	font-weight: 700;
+}
+
+section {
+	padding: 2em;
+}
+
+section h1 {
+	padding: 1em;
+	font-size: 2em;
+}
+
+.project-title {
+	padding: 0em 0.5em 0.5em 0.5em;
+	font-size: 1.2em;
+}
+
+.project {
+	padding: 0.5em;
+}
+
+.project img {
+	height: 80%;
+	width: 100%;
+}
+
+.projects {
+	justify-content: center;
+	flex-wrap: wrap;
+	display: flex;
+}
+
+footer {
+	padding: 1em;
+	font-size: 0.6em;
+}
