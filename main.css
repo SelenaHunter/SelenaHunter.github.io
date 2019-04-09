@@ -12,7 +12,6 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	text-align: center;
 	font-size: 1em;
-	padding: 2em;
 }
 
 h1,
@@ -42,7 +41,6 @@ ul {
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
-	padding: 5em;
 }
 
 .title {
@@ -56,7 +54,6 @@ ul {
 }
 
 .hero-text {
-	width: 100%;
 	text-align: center;
 	position: absolute;
 	top: 50%;
@@ -65,10 +62,11 @@ ul {
 }
 
 .navbar {
-	position:sticky;
-	top:0;
+	position: sticky;
+	top: 0;
 	background-color: #10100e;
 	z-index: 1;
+	border-bottom: 1px solid #fdb034;
 }
 
 .navbar ul {
@@ -83,8 +81,8 @@ ul {
 	color: #fdb034;
 }
 
-.about {
-	padding: 0em 6em;
+.about p {
+	padding: 0 15vw;
 }
 
 .about ul {
@@ -100,6 +98,7 @@ button {
 	background-color: inherit;
 	border: 1px solid #fdb034;
 	font-weight: 700;
+	justify-content: center;
 }
 
 button:hover {
@@ -141,4 +140,22 @@ section h1 {
 footer {
 	padding: 1em;
 	font-size: 0.6em;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+	body,
+	.about,
+	.title,
+	.subtitle {
+		text-align: center;
+		margin: 0em;
+		padding: 0.5em;
+	}
+	
+	button {
+		padding: 0.5em;
+		margin: 2em 0.4em;
+	}
 }
