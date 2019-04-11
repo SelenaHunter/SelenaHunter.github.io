@@ -21,15 +21,6 @@ h2,
 	font-family: 'Merriweather', serif;
 }
 
-a {
-	text-decoration: none;
-	color: #f6f1ee;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
 ul {
 	list-style: none;
 }
@@ -79,33 +70,42 @@ ul {
 
 .navbar a {
 	color: #fdb034;
+	text-decoration: none;
 }
 
-.about p {
+.navbar a:hover {
+	text-decoration: underline;
+}
+
+#about p {
 	padding: 0 15vw;
 }
 
-.about ul {
+#about ul {
 	display: inline-flex;
+	padding: 1em;
+	margin: 2em 0.5em;
 }
 
-button {
+#about li a {
+	color: #f6f1ee;
+	text-decoration: none;
 	font-family: inherit;
 	text-transform: uppercase;
 	padding: 1em;
 	margin: 2em 0.5em;
-	color: #fdb034;
 	background-color: inherit;
 	border: 1px solid #fdb034;
 	font-weight: 700;
-	justify-content: center;
 }
 
-button:hover {
+#about li a:hover {
 	cursor: pointer;
-	background-color: #fdb034;
 	color: #10100e;
+	text-decoration: none;
+	background-color: #fdb034;
 	font-weight: 700;
+	text-decoration: none;
 }
 
 section {
@@ -151,16 +151,20 @@ footer {
 @media only screen and (max-width: 600px) {
 
 	body,
-	.about,
+	#about,
+	#about p,
 	.title,
 	.subtitle {
 		text-align: center;
 		margin: 0em;
 		padding: 0.5em;
+		width: 100vw;
 	}
 
-	button {
-		padding: 0.5em;
-		margin: 2em 0.4em;
+	#about ul {
 	}
+	
+	#about li a {
+	}
+	
 }
