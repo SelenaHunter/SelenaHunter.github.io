@@ -58,7 +58,7 @@ ul {
 	margin: 0;
 	padding: 0;
 	top: 0;
-	translate3d(0px,0px,0px);
+	position: -webkit-sticky; /* Safari */
 	background-color: #10100e;
 	z-index: 1;
 	border-bottom: 1px solid #fdb034;
