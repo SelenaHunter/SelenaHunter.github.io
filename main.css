@@ -136,7 +136,8 @@ section h1 {
 	opacity: 1;
 }
 
-.projects, #about ul li {
+.projects,
+#about ul li {
 	display: inline-flex;
 	flex-wrap: wrap;
 }
@@ -145,7 +146,6 @@ footer {
 	padding: 1em;
 	font-size: 0.6em;
 }
-
 
 @media only screen and (max-width: 600px) {
 
@@ -158,11 +158,4 @@ footer {
 		margin: 0em;
 		padding: 0.5em;
 	}
-
-	#about ul {
-	}
-	
-	#about li a {
-	}
-	
 }
