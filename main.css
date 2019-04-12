@@ -41,6 +41,7 @@ ul {
 
 .subtitle {
 	color: #fdb034;
+	padding: 0.5em;
 	font-size: 2em;
 }
 
@@ -82,7 +83,6 @@ ul {
 }
 
 #about ul {
-	display: inline-flex;
 	padding: 1em;
 	margin: 2em 0.5em;
 }
@@ -93,7 +93,7 @@ ul {
 	font-family: inherit;
 	text-transform: uppercase;
 	padding: 1em;
-	margin: 2em 0.5em;
+	margin: 0.5em;
 	background-color: inherit;
 	border: 1px solid #fdb034;
 	font-weight: 700;
@@ -136,10 +136,9 @@ section h1 {
 	opacity: 1;
 }
 
-.projects {
-	justify-content: center;
+.projects, #about ul li {
+	display: inline-flex;
 	flex-wrap: wrap;
-	display: flex;
 }
 
 footer {
@@ -158,7 +157,6 @@ footer {
 		text-align: center;
 		margin: 0em;
 		padding: 0.5em;
-		width: 100vw;
 	}
 
 	#about ul {
