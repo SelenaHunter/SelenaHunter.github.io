@@ -155,7 +155,12 @@ section h1 {
 
 .project img {
 	height: 40vh;
-	width: 100%;
+	max-width: 100%;
+	image-rendering: -moz-crisp-edges;
+	image-rendering: -o-crisp-edges;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: crisp-edges;
+	-ms-interpolation-mode: nearest-neighbor;
 }
 
 .projects,
@@ -173,6 +178,7 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
+
 	body,
 	#about,
 	#about p,
