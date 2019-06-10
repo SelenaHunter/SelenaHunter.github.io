@@ -155,7 +155,8 @@ section h1 {
 
 .project img {
 	height: 40vh;
-	max-width: 100%;
+	max-width: 40vw;
+	object-fit: cover;
 	image-rendering: -moz-crisp-edges;
 	image-rendering: -o-crisp-edges;
 	image-rendering: -webkit-optimize-contrast;
