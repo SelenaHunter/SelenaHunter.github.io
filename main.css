@@ -80,7 +80,7 @@ a:hover {
 /* ============================== */
 
 #hero {
-	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(11, 19, 29, 0.8)), url(resources/img/caspar-camille-rubin-220711-unsplash.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(11, 19, 29, 0.8)), url(resources/img/home-header-img.jpg);
 	height: 50em;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -264,15 +264,15 @@ footer {
 /* ============================== */
 
 #about-section h1 {
-	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(11, 19, 29, 0.8)), url(resources/img/houston-ray-z3dW9lLdyO0-unsplash.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(11, 19, 29, 0.8)), url(resources/img/about-header-img.jpg);
 }
 
 #project-section h1 {
-	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(11, 19, 29, 0.8)), url(resources/img/thought-catalog-505eectW54k-unsplash.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(11, 19, 29, 0.8)), url(resources/img/projects-header-img.jpg);
 }
 
 #internship-section h1 {
-	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(11, 19, 29, 0.8)), url(resources/img/mostafa-meraji--xVYB7ciwcg-unsplash.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(11, 19, 29, 0.8)), url(resources/img/internship-header-img.jpg);
 }
 
 /* ============================== */
