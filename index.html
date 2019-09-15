@@ -6,19 +6,29 @@
 	<meta charset="utf-8">
 	<title>Selena Hunter, Front-End Developer</title>
 	<link rel="stylesheet" href="main.css">
+	<script type="text/javascript" src="resources/email-obfuscator.js"></script>
+	<script type="text/javascript" src="resources/main.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Amatic+SC:400,700|Andika" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-	<div class="navbar">
-		<ul>
-			<li><a href="#hero">Home</a></li>
-			<li><a href="#about">About</a></li>
-			<li><a href="#internship">Internship</a></li>
-			<li><a href="#project-section">Projects</a></li>
-		</ul>
-	</div>
+	<div id="page-container">
+	<div id="content-wrap">
+	<nav class="navigation">
+		<a href="javascript:void(0);" class="icon" onclick="toggleHamburgerMenu()">
+			<i class="fa fa-bars"></i>
+		</a>
+		<nav id="navbar">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="internship.html">Internship</a></li>
+				<li><a href="projects.html">Projects</a></li>
+			</ul>
+		</nav>
+	</nav>
 
 	<div id="hero">
 		<div class="hero-text">
@@ -27,97 +37,40 @@
 		</div>
 	</div>
 	
-	<section id="about">
-		<h1>About</h1>
+	<img class="divider" alt="" src="resources/img/Vintage-Decorative-Divider.svg"/>
+	
+	<section id="home">
 		<img id="profile" src="resources/img/shprofile.jpg" alt="Selena Hunter">
 		<ul>
-			<li><a href="http://github.com/SelenaHunter"><img alt="github link" src="resources/img/GitHub-Mark-Light-120px-plus.png"></a></li>
-			<li><a href="http://linkedin.com/in/selena-hunter"><img alt="linkedin link" src="resources/img/In-White-121px-R.png"></a></li>
-			<li><a href="resources/Selena_Hunter_resume_noinf.pdf">Résumé</a></li>
+			<li><a class="home-button" href="http://github.com/SelenaHunter"  target="_blank"><img alt="github link" src="resources/img/GitHub-Mark-Light-120px-plus.png"></a></li>
+			<li><a class="home-button" href="http://linkedin.com/in/selena-hunter" target="_blank"><img alt="linkedin link" src="resources/img/In-White-121px-R.png"></a></li>
+			<li><a class="home-button" href="resources/Selena_Hunter_resume_noinf.pdf" target="_blank">Résumé</a></li>
 			<li>
 				<script type="text/javascript" language="javascript">
-					// Email obfuscator script 2.1 by Tim Williams, University of Arizona
-					// Random encryption key feature coded by Andrew Moulden
-					// This code is freeware provided these four comment lines remain intact
-					// A wizard to generate this code is at http://www.jottings.com/obfuscator/
-					{
-						coded = "RyzyoBiloLy1PP@bfBcz.gtf"
-						key = "kRcX6OxWnPABNQyEhdLMVFz1DpgqImJ0oC75uGHsiZYwT3U94ab2efSvtKj8lr"
-						shift = coded.length
-						link = ""
-						for (i = 0; i < coded.length; i++) {
-							if (key.indexOf(coded.charAt(i)) == -1) {
-								ltr = coded.charAt(i)
-								link += (ltr)
-							} else {
-								ltr = (key.indexOf(coded.charAt(i)) - shift + key.length) % key.length
-								link += (key.charAt(ltr))
-							}
-						}
-						document.write("<a href='mailto:" + link + "'>" + "Contact" + "</a>")
-					}
+					scrambleEmail();
+					document.write("<a class='home-button' href='mailto:'" + link + "'>" + "Email" + "</a>")
 				</script><noscript>Sorry, you need Javascript on to email me.</noscript>
 			</li>
 		</ul>
-		<p>I'm a front-end developer with a passion for programming. I know JavaScript (ES6+), HTML, CSS, and study web accessibility and responsive web design in my free time. I am experienced with version control using Git and dabble in a variety of other disciplines.</p>
+		<p>I'm a front-end developer with a passion for programming. I know JavaScript (ES6+), HTML, CSS, and study web accessibility and responsive web design in my free time. I have experience with WordPress, React, version control using Git, and a variety of other disciplines.</p>
+		<p>I'm looking for work! If you like what I can do, please let me know. I'm searching for a team whose values I can get behind, where I can grow as a developer while bringing a fresh perspective and a whole lot of hustle. <script type="text/javascript" language="javascript">
+			scrambleEmail();
+			document.write("<a href='mailto:" + link + "'>" + "Let's make something amazing" + "</a>")
+		</script><noscript>Sorry, you need Javascript on to email me.</noscript>.</p>
 	</section>
+	</div>
 	
-	<section id="internship">
-		<h1>Internship</h1>
-		<p>Information coming soon.</p>
-	</section>
-	
-	<section id="project-section">
-		<h1>Projects</h1>
-		<div class="projects">
-			
-			<div class="project">
-				<h2 class="project-title">(Accessible) React To-do App</h2>
-				<a href="https://selenahunter.github.io/react-to-do-app/">
-					<div class="img-container">
-						<img src="resources/img/reacttodo.png" alt="React to-do app icon">
-					</div>
-				</a>
-			</div>
-			
-			<div class="project">
-				<h2 class="project-title">Pastel Doodler</h2>
-				<a href="https://selenahunter.github.io/Pastel-Doodler/">
-					<div class="img-container">
-						<img src="resources/img/pasteldoodlericon.png" alt="pastel doodler icon">
-					</div>
-				</a>
-			</div>
-			
-			<div class="project">
-				<h2 class="project-title">DA:I Memory</h2>
-				<a href="https://selenahunter.github.io/DA-I-Memory/">
-					<div class="img-container">
-						<img src="resources/img/daiicon.png" alt="DA:I memory icon">
-					</div>
-				</a>
-			</div>
-			
-			<div class="project">
-				<h2 class="project-title">Responsive Tribute Page</h2>
-				<a href="https://selenahunter.github.io/Tribute-Page/">
-					<div class="img-container">
-						<img src="resources/img/tributepageicon.png" alt="tribute page icon">
-					</div>
-				</a>
-			</div>
-
-			<div class="project">
-				<h2 class="project-title">Gallery Page</h2>
-				<a href="https://selenahunter.github.io/a-taste-of-salt/">
-					<div class="img-container">
-						<img src="resources/img/salticon.png" alt="a taste of salt icon">
-					</div>
-				</a>
-			</div>
-	
-			
-		</div>
-	</section>
-	<footer></footer>
-</body></html>
+	<footer>
+		<p>
+		<script type="text/javascript" language="javascript">
+				scrambleEmail();
+				document.write("<a href='mailto:" + link + "'>" + "Contact me" + "</a>")
+		</script><noscript>Sorry, you need Javascript on to email me.</noscript>
+			| <a href="resources/Selena_Hunter_resume_noinf.pdf" target="_blank">My résumé</a>
+			| <a href="http://github.com/SelenaHunter" target="_blank">My GitHub</a>
+		</p>
+	</footer>
+		
+	</div>
+</body>
+</html>

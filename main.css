@@ -1,3 +1,7 @@
+/* ============================== */
+/*      DOCUMENT-WIDE STYLES      */
+/* ============================== */
+
 * {
 	padding: 0;
 	margin: 0;
@@ -24,20 +28,60 @@ body {
 }
 
 h1,
-h2,
-.title,
-.subtitle {
+h2 {
 	font-family: var(--title-font);
 	font-weight: 700;
 }
 
-ul {
-	list-style: none;
+img {
+	image-rendering: -moz-crisp-edges;
+	image-rendering: -o-crisp-edges;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: crisp-edges;
+	-ms-interpolation-mode: nearest-neighbor;
 }
+
+section h1 {
+	font-size: 4em;
+	height: 5em;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+section p {
+	margin: 1em 15vw;
+	font-size: 1.3em;
+}
+
+a {
+	color: var(--orange);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.divider {
+	margin: 5em 1em;
+	height: 2em;
+	width: 80%;
+	filter: invert(99%) sepia(46%) saturate(1007%) hue-rotate(303deg) brightness(120%) contrast(94%);
+	opacity: 0.5;
+}
+
+/* ============================== */
+/*      HERO IMAGE AND TITLE      */
+/* ============================== */
 
 #hero {
 	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(11, 19, 29, 0.8)), url(resources/img/caspar-camille-rubin-220711-unsplash.jpg);
-	height: 95vh;
+	height: 50em;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -46,13 +90,16 @@ ul {
 
 .title {
 	font-size: 5em;
-	padding: 0.5em;
+	padding: 1em 0em;
+	font-family: var(--title-font);
+	font-weight: 700;
 }
 
 .subtitle {
 	color: var(--orange);
-	padding: 0.5em;
 	font-size: 3em;
+	font-family: var(--title-font);
+	font-weight: 700;
 }
 
 .hero-text {
@@ -63,7 +110,11 @@ ul {
 	transform: translate(-50%, -50%);
 }
 
-.navbar {
+/* ============================== */
+/*             NAVBAR             */
+/* ============================== */
+
+.navigation {
 	position: sticky;
 	margin: 0;
 	padding: 0;
@@ -75,37 +126,27 @@ ul {
 	font-family: var(--button-font);
 }
 
-.navbar ul {
-	display: inline-flex;
-	flex-wrap: wrap;
+.navigation a.icon {
+	display: none;
 }
 
-.navbar li {
+#navbar ul {
+	display: inline-flex;
+	flex-wrap: wrap;
+	list-style: none;
+}
+
+#navbar li {
 	padding: 1em 2em;
 	flex-grow: 1;
 }
 
-.navbar a {
-	color: var(--orange);
-	text-decoration: none;
-}
 
-.navbar a:hover {
-	text-decoration: underline;
-}
+/* ============================== */
+/*           HOME PAGE            */
+/* ============================== */
 
-#about p,
-#internship p {
-	padding: 0 15vw;
-	font-size: 1.3em;
-}
-
-#about ul {
-	padding: 1em;
-	margin: 1em 0.5em;
-}
-
-#about li a {
+.home-button {
 	color: var(--white);
 	text-decoration: none;
 	font-family: inherit;
@@ -118,7 +159,15 @@ ul {
 	font-weight: 700;
 }
 
-#about li a:hover {
+#home li {
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	font-family: var(--button-font);
+	font-weight: 700;
+}
+
+.home-button:hover {
 	cursor: pointer;
 	color: var(--white);
 	text-decoration: none;
@@ -127,78 +176,132 @@ ul {
 	text-decoration: none;
 }
 
-#about img {
+.home-button img {
 	height: 1.5em;
 	vertical-align: middle;
 }
 
 #profile {
-	height:60vh!important;
-	border-radius: 500px;
+	height: 40vh;
+	width: 40vh;
+	object-fit: cover;
+	object-position: top;
+	border-radius: 100%;
 	border: 5px solid var(--orange);
-	margin: 2em 0em 1em 0em;
+	margin: 0 0 1em 0;
 }
 
-img {
-	image-rendering: -moz-crisp-edges;
-	image-rendering: -o-crisp-edges;
-	image-rendering: -webkit-optimize-contrast;
-	image-rendering: crisp-edges;
-	-ms-interpolation-mode: nearest-neighbor;
-}
+/* ============================== */
+/*           ABOUT PAGE           */
+/* ============================== */
 
-section {
-	padding: 2em;
-}
+/* ============================== */
+/*         INTERNSHIP PAGE        */
+/* ============================== */
 
-section h1 {
-	padding: 0.5em;
-	font-size: 3em;
-}
+/* ============================== */
+/*          PROJECT PAGE          */
+/* ============================== */
 
 .project-title {
-	padding: 0em 0.5em 0.2em 0.5em;
+	padding: 0.2em 0.5em;
 	font-size: 2em;
 }
 
 .project {
-	padding: 0.5em;
+	margin: 1em;
+	width: 20em;
 }
 
 .project img {
-	height: 40vh;
-	max-width: 70vw;
+	opacity: 0.7;
+	transition: 0.3s;
+	height: 20em;
+	width: 20em;
 	object-fit: cover;
 }
 
-.projects,
-#about ul li {
+.project img:hover {
+	transition: 0.3s;
+	opacity: 1;
+}
+
+.projects {
 	display: inline-flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	font-family: var(--button-font);
-	font-weight: 700;
+}
+
+.projects p {
+	margin: 0;
+	font-size: 1em;
+}
+
+/* ============================== */
+/*             FOOTER             */
+/* ============================== */
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 3em;    /* Footer height */
 }
 
 footer {
-	padding: 1em;
-	font-size: 0.6em;
+	font-size: 1em;
+	padding: 1em 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
 
+/* ============================== */
+/*  HEADER IMAGES FOR EACH PAGE   */
+/* ============================== */
+
+#about-section h1 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(11, 19, 29, 0.8)), url(resources/img/houston-ray-z3dW9lLdyO0-unsplash.jpg);
+}
+
+#project-section h1 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(11, 19, 29, 0.8)), url(resources/img/thought-catalog-505eectW54k-unsplash.jpg);
+}
+
+#internship-section h1 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(11, 19, 29, 0.8)), url(resources/img/mostafa-meraji--xVYB7ciwcg-unsplash.jpg);
+}
+
+/* ============================== */
+/*          MEDIA QUERIES         */
+/* ============================== */
+
 @media only screen and (max-width: 600px) {
-
-	body,
-	#about,
-	#about p,
-	.title,
-	.subtitle {
-		text-align: center;
-		margin: 0em;
-		padding: 0.5em;
+	.navigation {
+		overflow: hidden;
+	}
+	
+	.navigation #navbar {
+		display: none;
+	}
+	
+	 .navigation #navbar.shown {
+		display: block;
+	}
+	
+	.navigation a.icon {
+		text-align: right;
+		position: relative;
+		display: block;
+		font-size: 2.5em;
+		padding: 0 0.5em;
 	}
 
-	#about ul {
-		padding: 0em;
-		margin: 0em;
+	#navbar ul {
+		display: inline-block;
 	}
+	
 }
