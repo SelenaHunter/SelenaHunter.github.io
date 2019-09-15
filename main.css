@@ -210,14 +210,14 @@ a:hover {
 
 .project {
 	margin: 1em;
-	width: 20em;
+	width: 18em;
 }
 
 .project img {
 	opacity: 0.7;
 	transition: 0.3s;
-	height: 20em;
-	width: 20em;
+	height: 18em;
+	width: 18em;
 	object-fit: cover;
 }
 
