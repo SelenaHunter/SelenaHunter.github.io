@@ -67,14 +67,6 @@ a:hover {
 	text-decoration: underline;
 }
 
-.divider {
-	margin: 5em 1em;
-	height: 2em;
-	width: 80%;
-	filter: invert(99%) sepia(46%) saturate(1007%) hue-rotate(303deg) brightness(120%) contrast(94%);
-	opacity: 0.5;
-}
-
 /* ============================== */
 /*      HERO IMAGE AND TITLE      */
 /* ============================== */
