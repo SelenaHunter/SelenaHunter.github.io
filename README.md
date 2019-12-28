@@ -8,3 +8,7 @@ These are my portfolio projects:
 **Pastel Doodler** - [Demo](https://selenahunter.github.io/Pastel-Doodler/) | [Code](https://github.com/SelenaHunter/Pastel-Doodler) - A web canvas-based project where you can draw with your finger (on a mobile device) or the mouse, and save your picture as a transparent .PNG.  
 **Dragon Age: Inquisition Memory** - [Demo](https://selenahunter.github.io/DA-I-Memory/) | [Code](https://github.com/SelenaHunter/DA-I-Memory) - A JavaScript-based Memory game featuring the party members of the video game Dragon Age: Inquisition.  
 **Responsive Tribute Page** - [Demo](https://selenahunter.github.io/Tribute-Page/) | [Code](https://github.com/SelenaHunter/Tribute-Page) - A FreeCodeCamp project writeup about the Radium Girls, a courageous group of women whose sacrifice led to a focus on workpace safety in the United States.  
+
+# Internship
+
+I completed an internship from August to December 2019 as the sole web designer/developer at [Safe Harbor International Ministries](safeharborim.com/), a non-profit organization dedicated to helping victims of domestic violence. More information can be viewable [on my internship page](https://selenahunter.github.io/internship.html).
