@@ -28,7 +28,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
 	font-family: var(--title-font);
 	font-weight: 700;
 }
@@ -194,6 +195,31 @@ a:hover {
 /* ============================== */
 /*         INTERNSHIP PAGE        */
 /* ============================== */
+
+.image {
+	width: 60vw;
+	height: auto;
+}
+
+#internship-section ul {
+	text-align: left;
+	list-style-type: square;
+	margin-left: 3em;
+}
+
+#internship-section h2 {
+	font-size: 2.5em;
+	margin-top: 1em;
+}
+
+#internship-section h3 {
+	font-size: 1.5em;
+	margin-top: 1em;
+}
+
+#duties {
+	margin: 0 10%;
+}
 
 /* ============================== */
 /*          PROJECT PAGE          */
