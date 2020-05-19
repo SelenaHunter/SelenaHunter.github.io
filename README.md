@@ -3,11 +3,11 @@
 These are my portfolio projects:
 
 
+**US Citizenship Study Guide Quiz** - [Demo](https://selenahunter.github.io/Citizenship-Quiz/) | [Code](https://github.com/SelenaHunter/Citizenship-Quiz/tree/master) - An online flashcard-based study guide for the US citizenship exam, built with React and the Who is My Representative API.  
+**CSS Blend Modes** - [Demo](https://selenahunter.github.io/CSS-Blend-Modes/) | [Code](https://github.com/SelenaHunter/CSS-Blend-Modes) - An app that previews CSS blend modes on multiple uploaded images.  
 **North Bay Sailing** - [Demo](https://selenahunter.github.io/North-Bay-Sailing/) | [Code](https://github.com/SelenaHunter/North-Bay-Sailing) - A mobile-responsive landing page for a fictional sailing company.  
-**React To-do App** - [Demo](https://selenahunter.github.io/react-to-do-app/) | [Code](https://github.com/SelenaHunter/react-to-do-app) - A React to-do app fully accessible to screenreaders. Screenreader users are notified when tasks are added or deleted.  
 **Pastel Doodler** - [Demo](https://selenahunter.github.io/Pastel-Doodler/) | [Code](https://github.com/SelenaHunter/Pastel-Doodler) - A web canvas-based project where you can draw with your finger (on a mobile device) or the mouse, and save your picture as a transparent .PNG.  
 **Dragon Age: Inquisition Memory** - [Demo](https://selenahunter.github.io/DA-I-Memory/) | [Code](https://github.com/SelenaHunter/DA-I-Memory) - A JavaScript-based Memory game featuring the party members of the video game Dragon Age: Inquisition.  
-**Responsive Tribute Page** - [Demo](https://selenahunter.github.io/Tribute-Page/) | [Code](https://github.com/SelenaHunter/Tribute-Page) - A FreeCodeCamp project writeup about the Radium Girls, a courageous group of women whose sacrifice led to a focus on workpace safety in the United States.  
 
 # Internship
 

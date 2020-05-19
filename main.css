@@ -34,14 +34,6 @@ h3 {
 	font-weight: 700;
 }
 
-img {
-	image-rendering: -moz-crisp-edges;
-	image-rendering: -o-crisp-edges;
-	image-rendering: -webkit-optimize-contrast;
-	image-rendering: crisp-edges;
-	-ms-interpolation-mode: nearest-neighbor;
-}
-
 section h1 {
 	font-size: 4em;
 	height: 5em;
@@ -232,14 +224,14 @@ a:hover {
 
 .project {
 	margin: 1em;
-	width: 18em;
+	width: 24em;
 }
 
 .project img {
 	opacity: 0.7;
 	transition: 0.3s;
 	height: 18em;
-	width: 18em;
+	width: 24em;
 	object-fit: cover;
 }
 
